@@ -1,0 +1,50 @@
+<h1>Média parcial</h1>
+
+<form>
+    <div>
+        <label for="">Bimestre 1</label>
+        <input id="bim1" type="number" [value]="boletim.obterBim1()" #b1>
+    </div>
+
+    <div>
+        <label for="">Bimestre 2</label>
+        <input id="bim2" type="number" [value]="boletim.obterBim2()" #b2>
+    </div>
+    
+    <div>
+        <label for="">Bimestre 3</label>
+        <input id="bim3" type="number" [value]="boletim.obterBim3()" #b3>
+    </div>
+    
+    <div>
+        <label for="">Bimestre 4</label>
+        <input id="bim4" type="number" [value]="boletim.obterBim4()" #b4>
+    </div>
+
+    <div>
+        <input type="button" value="Calcular" (click)="calcularMediaParcial(+b1.value, +b2.value, +b3.value, +b4.value)">
+    </div>
+
+</form>
+
+<div>
+    <p>{{resultado}}</p>
+</div>
+
+
+<div *ngIf="mediaParcial < 60 && resultado != ''">
+<form>
+    <div>
+        <label for="nav">Avaliação final</label>
+        <input id="nav" type="number" #naf>
+    </div> 
+
+    <div>
+        <input type="button" value="Calcular" (click)="calcularMediaFinal(+naf.value)">
+    </div>
+</form>
+</div>
+
+<div>
+    <p>{{resultadoAvFinal}}</p>
+</div>

@@ -1,0 +1,81 @@
+body {
+    background-color: #f2e7fe; /* Cor de fundo roxo claro */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #7b1fa2; /* Cor do título em roxo mais escuro */
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Cor de fundo branca para o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #7b1fa2; /* Cor do rótulo em roxo mais escuro */
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #7b1fa2; /* Cor da borda em roxo mais escuro */
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="button"] {
+    background-color: #7b1fa2; /* Cor de fundo do botão em roxo mais escuro */
+    color: #ffffff; /* Cor do texto do botão em branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #5a1481; /* Cor de fundo do botão em roxo mais escuro quando hover */
+}
+
+p {
+    color: #7b1fa2; /* Cor do texto em roxo mais escuro */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilos para a seção de avaliação final */
+div[ngIf="mediaParcial < 60"] {
+    margin-top: 20px;
+    background-color: #ffffff; /* Cor de fundo branca para a seção de avaliação final */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilos para a seção de avaliação final - rótulo */
+label[for="nav"] {
+    color: #7b1fa2; /* Cor do rótulo em roxo mais escuro */
+    font-weight: bold;
+}
+
+/* Estilos para a seção de avaliação final - botão */
+input[type="button"][value="Calcular"] {
+    background-color: #7b1fa2; /* Cor de fundo do botão em roxo mais escuro */
+    color: #ffffff; /* Cor do texto do botão em branco */
+}
+
+input[type="button"][value="Calcular"]:hover {
+    background-color: #5a1481; /* Cor de fundo do botão em roxo mais escuro quando hover */
+}
